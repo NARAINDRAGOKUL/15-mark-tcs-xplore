@@ -1,0 +1,10 @@
+def count_lowercase(s):
+    count = 0
+    for char in s:
+        if char.islower():
+            count += 1
+    return count
+
+# Example usage
+s = "WelComeToMyJAva"
+print("The Number of Lowercase letters are:", count_lowercase(s))
