@@ -1,0 +1,9 @@
+def reverse_string(s):
+    result = ""  
+    for char in reversed(s):  # Iterate over the string in reverse order
+        result += char  
+    return result
+
+# Example usage
+s = "Hello World"
+print(reverse_string(s))
