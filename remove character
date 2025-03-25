@@ -1,0 +1,12 @@
+def remove_character(s, ch):
+    result = ""  
+    for char in s:  
+        if char != ch:  # If the character is not the given one, add it to result
+            result += char
+    return result
+
+# Example usage
+s = input("Enter the String: ")
+ch = input("Enter the Character: ")
+
+print("Modified String:", remove_character(s, ch))
