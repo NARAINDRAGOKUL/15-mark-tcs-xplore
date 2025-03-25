@@ -1,0 +1,10 @@
+def first_letters(s):
+    result = ""  
+    words = s.split()  # Split the string into words
+    for word in words:  
+        result += word[0]  # Add the first letter of each word to result
+    return result
+
+# Example usage
+s = "Hello How Are You"
+print(first_letters(s))
