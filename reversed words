@@ -1,0 +1,10 @@
+def reverse_words(s):
+    words = s.split()  # Split the string into words
+    result = ""  
+    for word in reversed(words):  # Iterate over words in reverse order
+        result += word + " "  # Add word to result with a space
+    return result.strip()  # Remove trailing space
+
+# Example usage
+s = "Welcome to my Java Programming"
+print(reverse_words(s))
