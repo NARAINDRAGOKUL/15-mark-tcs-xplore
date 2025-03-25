@@ -1,0 +1,10 @@
+def count_words(s):
+    count = 0
+    words = s.split()  # Split the string by spaces
+    for word in words:
+        count += 1  # Increment count for each word
+    return count
+
+# Example usage
+s = "Welcome to My World of Programming"
+print("The Number of Words are:", count_words(s))
