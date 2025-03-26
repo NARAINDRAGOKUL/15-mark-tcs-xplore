@@ -1,0 +1,14 @@
+def sum_and_count_multiples_of_3(a, b):
+    total_sum = 0
+    count = 0
+
+    for num in range(a, b + 1):  # Iterate through numbers from a to b
+        if num % 6 == 0:  # Check if multiple of 3
+            total_sum += num
+            count += 1
+
+    print(f"Sum={total_sum}")
+    print(f"Count={count}")
+
+# Test case
+sum_and_count_multiples_of_3(12, 100)
