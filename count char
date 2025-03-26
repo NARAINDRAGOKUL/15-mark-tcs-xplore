@@ -1,0 +1,21 @@
+def count_chars(s):
+    vowels = "AEIOUaeiou"
+    consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz"
+    
+    vowel_count = 0
+    consonant_count = 0
+    number_count = 0
+
+    for char in s:
+        if char in vowels:
+            vowel_count += 1
+        elif char in consonants:
+            consonant_count += 1
+        elif char.isdigit():
+            number_count += 1
+
+    return f"Number of Vowels: {vowel_count}\nNumber of Consonants: {consonant_count}\nNumber of Numbers: {number_count}"
+
+# Calling the function
+result = count_chars("Welcome1234")
+print(result)
