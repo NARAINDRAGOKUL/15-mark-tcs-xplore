@@ -1,0 +1,13 @@
+def find_largest_word(s):
+    words = s.split()  # Split the string into words
+    max_word = ""  # Initialize an empty string for the largest word
+
+    for word in words:  # Iterate through each word
+        if len(word) > len(max_word):  # Check if the word is longer
+            max_word = word  
+
+    print(max_word)  # Print the longest word
+
+# Test case
+find_largest_word("Hey Hello you are having any trouble")  
+# Output: trouble
