@@ -1,0 +1,13 @@
+def count_spaces(s):
+    count = 0
+    for char in s:
+        if char == ' ':
+            count += 1
+    if count >= 3:
+        print(count)
+    else:
+        print("NAN")
+
+# Test cases
+count_spaces("Welcome to my world of programming")  # Output: 5
+count_spaces("Hello Hi")  # Output: NAN
