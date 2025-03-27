@@ -1,0 +1,13 @@
+num = 123  # Example input
+sum_digits = 0  # To store the sum of digits
+
+while num > 0:
+    sum_digits += num % 10  # Extract last digit and add to sum
+    num //= 10  # Remove last digit
+
+# Check divisibility by 3
+if sum_digits % 3 == 0:
+    print("True")
+else:
+    print("False")
+
