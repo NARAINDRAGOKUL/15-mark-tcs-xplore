@@ -1,0 +1,18 @@
+string = "Hey3 Java Learners"
+words = string.split()  # Split the string into words
+result = ""  # Store the final output
+
+for word in words:
+    if any(char.isdigit() for char in word):  # Ignore words containing digits
+        continue  
+
+    last_char = ""  # Variable to store the last valid character
+    for char in word[::-1]:  # Iterate from the last character of the word
+        if char.isalpha():  # Check if it's a letter
+            last_char = char
+            break  # Stop at the first valid letter from the end
+    
+    if last_char:  # If a valid last character is found, append it
+        result += last_char
+
+print("Last characters of each word:", result)
