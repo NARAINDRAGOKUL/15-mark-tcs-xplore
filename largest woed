@@ -1,0 +1,9 @@
+sentence = "Python is an amazing programming language"
+words = sentence.split()  # Split sentence into words
+largest_word = ""  # Initialize largest word
+
+for word in words:
+    if len(word) > len(largest_word):  # Compare lengths
+        largest_word = word  # Update largest word
+
+print("Largest word:", largest_word)
