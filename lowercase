@@ -1,0 +1,8 @@
+string = "XpLoRePyThOn"
+count = 0  # Initialize counter
+
+for char in string:
+    if char.islower():
+        count += 1
+
+print("Number of lowercase characters:", count)
