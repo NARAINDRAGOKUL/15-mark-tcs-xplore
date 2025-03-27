@@ -1,0 +1,8 @@
+string = "Hello World"
+result = ""  # To store characters at odd indices
+
+for i in range(1, len(string), 2):  # Start from index 1 and increment by 2
+    if string[i] != " ":  # Ignore spaces
+        result += string[i]  # Append characters at odd indices
+
+print("Characters at odd indices (without spaces):", result)
