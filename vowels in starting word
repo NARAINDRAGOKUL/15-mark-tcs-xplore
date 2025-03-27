@@ -1,0 +1,10 @@
+string = "HeLlo I am a Student"
+vowels = "AEIOUaeiou"
+words = string.split()  # Split the string into words
+result = ""  # To store extracted vowels
+
+for word in words:
+    if word[0] in vowels:  # Check if the first character is a vowel
+        result += word[0]  # Append it to the result
+
+print("Vowels at the start of words:", result)
