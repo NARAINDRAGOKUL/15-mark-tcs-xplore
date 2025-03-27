@@ -1,0 +1,10 @@
+string = "xplore"
+char = 'r'
+index = -1  # Default value if char is not found
+
+for i in range(len(string)):
+    if string[i] == char:
+        index = i
+        break  # Stop at the first occurrence
+
+print("Index of '{}' in '{}': {}".format(char, string, index))
